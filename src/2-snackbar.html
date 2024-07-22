@@ -8,8 +8,32 @@
     <title>SnackBar</title>
   </head>
   <body>
-    <section>
+    <section class="back-styles">
       <a href="./index.html">Go back</a>
+    </section>
+    <section>
+      <form class="form">
+        <label class="snackbar-label">
+          Delay (ms)
+          <input class="first-input" type="number" name="delay" required />
+        </label>
+
+        <fieldset class="snackbar-fieldset">
+          <legend>State</legend>
+          <label class="second-input">
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label class="second-input">
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button class="snackbar-button" type="submit">
+          Create notification
+        </button>
+      </form>
     </section>
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
